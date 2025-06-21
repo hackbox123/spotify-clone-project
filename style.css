@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: "Roboto", sans-serif;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+.left{
+    width:25vw;
+    padding: 10px;
+
+}
+.right{
+    width:75vw;
+    padding: 10px;
+}
+
+
+.home ul li{
+    display: flex;
+    gap: 15px;
+    width: 14px;
+    list-style: none;
+    padding-top: 13px;
+    font-weight: bold;
+
+}
+.library{
+    min-height: 80vh;
+    position: relative;
+}
+.heading{
+    display: flex;
+    gap: 12px;
+    width: 100%;
+    padding-top: 13px;
+    padding: 23px 14px;
+    font-weight: bold;
+    align-items: center;
+    font-size: 13px;
+}
+.heading img{
+    width: 30px;
+}
+.footer{
+    display: flex;
+    font-size: 10px;
+    gap: 10px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+
+
+}
+.footer a {
+    color:grey;
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 34, 34);
+}
+.header > *{
+    padding: 20px;
+}
+.right{
+    margin: 16px 0;
+}
+.spotifyPlaylists{
+    padding: 16px;
+}
+.cardContainer{
+    margin: 30px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.card{
+    position: relative;
+    width: 175px;
+    padding: 9px;
+    border-radius: 5px;
+    background-color: #171616;
+    transition:all 0.3s ease-out;
+}
+.card img{
+    width: 100%;
+    object-fit: contain;
+}
+.card > *{
+    padding-top: 0px;
+}
+.play{
+    position: absolute;
+    top: 128px;
+    right: 19px;
+    opacity: 0;
+    transition:all 0.3s ease-out;
+}
+.card:hover .play {
+  opacity: 1;
+}
+.card:hover {
+  transform: scale(1.05);
+  background-color: #292828;
+}
+
+
+/* .roboto-1 {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style:normal;
+  font-variation-settings: "wdth" 100;
+} */
