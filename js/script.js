@@ -117,7 +117,7 @@ async function displayAlbum(){
     Array.from(document.getElementsByClassName("card")).forEach(e=>{
         e.addEventListener("click", async item=>{
            songsname.length=0
-           await getSongs(`album/${item.currentTarget.dataset.folder}/`)
+           await getSongs(`/album/${item.currentTarget.dataset.folder}/`)
            play.src = "img/play.svg" 
            console.log(songsname)
            playMusic(songsname[0])
